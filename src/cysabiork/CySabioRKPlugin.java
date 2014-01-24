@@ -54,6 +54,9 @@ import cysbml.logging.LogCyPlugin;
  * @author Matthias Koenig
  * @date 2014-01-24 
  * 
+ * TODO: Ant build with the current source code of CySBML.
+ *
+ *
  *
  * MAVEN DEPENDENCIES
  * ----------------------------

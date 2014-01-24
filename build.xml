@@ -5,7 +5,7 @@
     </description>
   	
 	<!-- set global properties for this build -->
-	<property name="cytoLibDir" value="C:\Users\mkoenig\Desktop\Cytoscape_2\cytoscape-2.8.3"/>
+	<property name="cytoLibDir" value="${user.home}/Programs/Cytoscape_2/cytoscape-2.8.3"/>
   	<property name="name" value="CySabioRK"/>
     <property name="version" value="v0.17"/>
     <property name="libDir" value="lib"/>	
@@ -21,8 +21,8 @@
 	   </fileset>
 	   <fileset dir="${cytoLibDir}"/>
 	   <fileset dir="${cytoLibDir}/plugins">
-	   		<exclude name="/**/*sbml*"/>
-	   	    <exclude name="/**/*SBML*"/>
+	   		<exclude name="**/*sbml*"/>
+	   	    <exclude name="**/*SBML*"/>
 	   </fileset>
 	 </path>
 	
