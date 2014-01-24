@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name="CySabioRK" default="cysabiork" basedir=".">
+    <description>
+        CySabioRK build ANT build file
+    </description>
+  	
+	<!-- set global properties for this build -->
+	<property name="cytoLibDir" value="C:\Users\mkoenig\Desktop\Cytoscape_2\cytoscape-2.8.3"/>
+  	<property name="name" value="CySabioRK"/>
+    <property name="version" value="v0.17"/>
+    <property name="libDir" value="lib"/>	
+    <property name="src" location="src"/>
+	<property name="build" location="build"/>
+	<property name="dist"  location="dist"/>
+	
+	 <path id="master-classpath">
+	   <fileset dir="${libDir}">
+	     <include name="jersey-client-1.17.1.jar"/>
+	   	 <include name="jersey-core-1.17.1.jar"/>
+	     <include name="CySBML-v1.29.jar"/>
+	   </fileset>
+	   <fileset dir="${cytoLibDir}"/>
+	   <fileset dir="${cytoLibDir}/plugins">
+	   		<exclude name="/**/*sbml*"/>
+	   	    <exclude name="/**/*SBML*"/>
+	   </fileset>
+	 </path>
+	
+	<target name="init">
+	   <!-- Create the time stamp -->
+	   <tstamp/>
+	   <!-- Create the build directory structure used by compile -->
+	   <mkdir dir="${build}"/>
+	</target>
+
+	<target name="compile" depends="init" description="compile the source " >
+	    <!-- Compile the java code from ${src} into ${build} -->
+	    <javac srcdir="${src}" 
+	    	   destdir="${build}"
+	    	   includeantruntime="false"
+	    	   classpathref="master-classpath"/>
+	</target>
+
+	<target name="clean" description="clean up" >
+	    <!-- Delete the ${build} directory tree -->
+	    <delete dir="${build}"/>
+	</target>
+	
+    <target name="cysabiork" depends="init, compile">
+       <jar destfile="${build}/${name}-${version}.jar">	
+        	<manifest>
+                <attribute name="Class-Path" value="."/>
+            	<attribute name="Cytoscape-Plugin" value="cysabiork.CySabioRKPlugin"/>
+            </manifest>
+        	<fileset dir="${src}">
+    	    	<include name="cysabiork/**/*"/>
+        	</fileset>
+            <fileset dir="${build}">
+        	    <include name="cysabiork/**/*"/>
+            </fileset>
+            <zipfileset excludes="META-INF/*.SF" src="${libDir}/jersey-client-1.17.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${libDir}/jersey-core-1.17.1.jar"/>
+        </jar>
+    </target>
+	
+</project>
