@@ -6,6 +6,7 @@
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=RYHNRJFBMWD5N" title="Donate to this project using Paypal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" /></a>
 
 **Status** : v0.2.0 (alpha)  
+**Documentation** : http://matthiaskoenig.github.io/cy2sabiork/
 **Support & Forum** : https://groups.google.com/forum/#!forum/cysbml-cyfluxviz  
 **Bug Tracker** : https://github.com/matthiaskoenig/cy2sabiork/issues  
 
@@ -28,7 +29,7 @@ https://github.com/matthiaskoenig/cy2sabiork/releases/
 `cy2sbml-vx.xx.jar`  
 `cy2sabiork-vx.xx.jar`  
 in the Cytoscape plugin folder under  
-`Cytoscape_v2.8.*/plugins/`
+`Cytoscape_v2.8.*/plugins/`  
 Windows: `C:/Program Files/Cytoscape_v2.8.*/plugins`
     
 * remove 'sbml-reader-2.8.3-jar-with-dependencies.jar' from the plugin folder.
