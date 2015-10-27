@@ -1,7 +1,7 @@
 package cysabiork;
 
 /*
-Copyright (c) 2014, Matthias Koenig, Computational Systems Biochemistry, 
+Copyright (c) 2015, Matthias Koenig, Computational Systems Biochemistry, 
 Charite Berlin
 matthias.koenig [at] charite.de
 
@@ -53,41 +53,12 @@ import cysbml.logging.LogCyPlugin;
  * 
  * @author Matthias Koenig
  * @date 2014-01-24 
- * 
- * TODO: Ant build with the current source code of CySBML.
- *
- *
- *
- * MAVEN DEPENDENCIES
- * ----------------------------
- * Jersey RESTful API
-Client application on JDK
-Applications running on plain JDK using only client part of JAX-RS specification need to depend only on client. There are various additional modules which can be added, like for example grizzly or apache connector (see dependencies snipped below). Jersey client runs by default with plain JDK (using HttpUrlConnection). See Chapter 5, Client API. for more details.
-
-<dependency>
-    <groupId>org.glassfish.jersey.core</groupId>
-    <artifactId>jersey-client</artifactId>
-    <version>2.4</version>
-</dependency>
-
-Currently available connectors:
-<dependency>
-    <groupId>org.glassfish.jersey.connectors</groupId>
-    <artifactId>jersey-grizzly-connector</artifactId>
-    <version>2.4</version>
-</dependency>
- 
-<dependency>
-    <groupId>org.glassfish.jersey.connectors</groupId>
-    <artifactId>jersey-apache-connector</artifactId>
-    <version>2.4</version>
-</dependency>
  */
 
 public class CySabioRKPlugin extends CytoscapePlugin implements PropertyChangeListener{
 	
-	public static final String NAME = "CySabioRK"; 
-	public static final String VERSION = "v0.17";
+	public static final String NAME = "cy2sabiork"; 
+	public static final String VERSION = "v0.2.0";
 	public static LogCyPlugin LOGGER = new LogCyPlugin(NAME);
 	
 	public CySabioRKPlugin() throws SecurityException, IOException{	
