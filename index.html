@@ -1,1 +1,106 @@
-My Page
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="./css/core.css" type="text/css" />
+<link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+<title>CySabioRK</title>
+</head>
+
+<body>
+
+<div id="menu">
+	<div id="navigation">
+	
+	<h1>&nbsp;&nbsp;CySabioRK</h1>
+	<a class="menu" href="#Introduction">Introduction</a><br />
+	<a class="menu" href="#Screenshots">Screenshots</a><br />
+	<a class="menu" href="#Installation">Installation</a><br />
+	</div>
+
+	<div id="news">
+	<p class="news">
+	<b>Release Information</b><br />
+	[29|05|2012]<br />
+	CySabioRK-v0.1 (alpha) - First release for Cytoscape 2.8 providing proof of principle<br/>
+	</p>
+	<h1>&nbsp;</h1>
+	</div>
+	
+</div>
+
+<div id="main">
+<!-- Introduction -->
+<h2><a name="top"></a><a name="Introduction"></a>Introduction</h2>
+<p>	
+	We present CySabioRK an open-source <a href="http://www.cytoscape.org/" target="_blank">Cytoscape</a> plugin for loading reaction kinetics networks via web services from <a href="http://sabio.villa-bosch.de/" target="_blank">Sabio-RK</a>.<br> CySabioRK is available for download at <a href="http://www.charite.de/sysbio/people/koenig/software/cysabiork/release/CySabioRK-v0.1.jar" target="_blank">http://www.charite.de/sysbio/people/koenig/software/cysabiork/release/CySabioRK-v0.1.jar</a>.<br />
+	CySabioRK-v0.1 supports Cytoscape 2.8 and integrates with <a href="http://www.charite.de/sysbio/people/koenig/software/cysbml/" target="_blank">CySBML</a>.
+</p>
+<p>
+Current features are
+<ul>
+<li>Import of reaction kinetics Sabio-RK via <a href="http://sabio.villa-bosch.de/layouts/content/webservices.gsp" target="_blank">RESTful web services</a></li>
+<li>Integration with CySBML</li>
+</ul>
+</p>
+<p>
+	Please try and report any problems you encounter using CySabioRK to
+	matthias.koenig[AT]charite.de
+</p>
+<p>
+	Thanks and have fun</br>
+	The CySabioRK team.
+</p>
+<p>
+	CySabioRK was developed by <a href="http://www.charite.de/sysbio/people/koenig/">Matthias K&ouml;nig</a> 
+	and was funded by the Virtual Liver Network.
+</p>
+<p>
+	<a href="http://www.virtual-liver.de"><img src="http://www.virtual-liver.de/images/logo.png" alt="VLN Logo" border=0 height=37 width=100></img></a>&nbsp;&nbsp;
+	<a href=\"http://www.charite.de\"><img src="http://www.charite.de/sysbio/Charite.small.png" alt="Charite Logo" border=0 height=37 width=101></img></a>&nbsp;&nbsp;
+</p>
+
+<!-- Screenshots -->
+<h2></a><a name="Screenshots"></a>Screenshots</h2>
+<span class="toplink">[<a href="#top">top</a>]</span><br /><br />
+<table>
+	<tr>
+		<td>
+<a href="images/CySabioRK-v0.1-screenshot.png"><img src="images/CySabioRK-v0.1-screenshot.png" width="700" alt="CySabioRK screenshot"/></a><br/></td>
+<td>
+<br>
+<br>
+<span class="figure_caption"><b>Fig.1</b>: CySabioRK import dialog. (Click for larger version)<br><br>
+CySabioRK provides the generation of reaction kinetic networks based on arbitrary Sabio-RK RESTful queries.<br><br>
+Shown is the search results for multiple queries. CySBML provides access to the annoted species and reaction information.
+</span></td>
+</tr>
+</table>
+
+<!-- Installation -->
+<h2><a name="Installation"></a>Installation</h2>
+<span class="toplink">[<a href="#top">top</a>]</span><br/>
+<p>
+<a href="http://www.cytoscape.org/" target="_blank">Cytoscape 2.8.2</a> or later has to be installed prior to the plugin installation.
+<p>
+<p>
+[1] CySabioRK depends on <a href="http://www.charite.de/sysbio/people/koenig/software/cysbml/" target="_blank">CySBML</a> which has to be installed prior to CySabioRK and provides the necessary SBML support and parsing for Cytoscape.
+<p>
+[2] Download the latest CySabioRK version at <a href="http://www.charite.de/sysbio/people/koenig/software/cysabiork/release/CySabioRK-v0.1.jar" target="_blank">http://www.charite.de/sysbio/people/koenig/software/cysabiork/release/CySabioRK-v0.1.jar</a>.</br>
+</p>
+<p>
+[2] Move the <span class="code">CySabioRK-vX.XX.jar</span> into the Cytoscape plugin directory located in the Cytoscape installation directory under plugins<br />
+<span class="code">$CYTO_INSTALL/plugins/</span>.</br> 
+On Windows Systems <span class="code">Program Files/Cytoscape_v2.8.2/plugins/</span> on Mac 
+<span class="code">/Applications/Cytoscape_v2.8.2/plugins</span>.<br/>
+</p>
+<p>
+The plugin is loaded and installed during the next Cytoscape startup.</br>
+To update to current CySabioRK version replace the old version of <span class="code">CySabioRK-vX.X.jar</span> with the new version, to uninstall remove the <span class="code">CySabioRK-vX.X.jar</span> from the plugin folder.
+</p>
+</div>
+
+</body>
+</html>
