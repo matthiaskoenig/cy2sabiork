@@ -6,7 +6,7 @@
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=RYHNRJFBMWD5N" title="Donate to this project using Paypal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" /></a>
 
 **Status** : v0.2.0 (alpha)  
-**Documentation** : http://matthiaskoenig.github.io/cy2sabiork/
+**Documentation** : http://matthiaskoenig.github.io/cy2sabiork/  
 **Support & Forum** : https://groups.google.com/forum/#!forum/cysbml-cyfluxviz  
 **Bug Tracker** : https://github.com/matthiaskoenig/cy2sabiork/issues  
 
