@@ -4,10 +4,10 @@
     <title>cy2sabiork</title>
     <description>cy2sabiork: Cytoscape 2 plugin for SabioRK
 </description>
-    <link>http://matthiaskoenig.github.io/</link>
-    <atom:link href="http://matthiaskoenig.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 30 Oct 2015 17:39:01 +0100</pubDate>
-    <lastBuildDate>Fri, 30 Oct 2015 17:39:01 +0100</lastBuildDate>
+    <link>http://matthiaskoenig.github.io/cy2sabiork/</link>
+    <atom:link href="http://matthiaskoenig.github.io/cy2sabiork/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 02 Nov 2015 08:53:56 +0100</pubDate>
+    <lastBuildDate>Mon, 02 Nov 2015 08:53:56 +0100</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Fri, 30 Oct 2015 13:11:44 +0100</pubDate>
-        <link>http://matthiaskoenig.github.io/jekyll/update/2015/10/30/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://matthiaskoenig.github.io/jekyll/update/2015/10/30/welcome-to-jekyll.html</guid>
+        <link>http://matthiaskoenig.github.io/cy2sabiork/jekyll/update/2015/10/30/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://matthiaskoenig.github.io/cy2sabiork/jekyll/update/2015/10/30/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>

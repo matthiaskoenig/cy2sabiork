@@ -10,7 +10,7 @@ title: cy2sabiork
 email: konigmatt@googlemail.com
 description: > # this means to ignore newlines until "baseurl:"
   cy2sabiork: Cytoscape 2 plugin for SabioRK
-baseurl: "" 
+baseurl: "/cy2sabiork" 
 url: "http://matthiaskoenig.github.io" # the base hostname & protocol for your site
 twitter_username: konigmatt
 github_username:  matthiaskoenig
