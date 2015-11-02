@@ -1,7 +1,7 @@
 # cy2sabiork: SabioRK integration in Cytoscape 2
 
 **cy2sabiork** is a [Cytoscape 2](http://www.cytoscape.org) plugin for the for accessing kinetic information from
-[Sabio-RK](http://sabio.villa-bosch.de/) via the RESTful web service.  
+[SABIO-RK](http://sabio.villa-bosch.de/) via the RESTful web service.  
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=RYHNRJFBMWD5N" title="Donate to this project using Paypal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" /></a>
 
@@ -28,15 +28,14 @@ https://github.com/matthiaskoenig/cy2sabiork/releases/latest
 * move the downloaded jar files  
 `cy2sbml-vx.xx.jar`  
 `cy2sabiork-vx.xx.jar`  
-in the Cytoscape plugin folder under  
-`Cytoscape_v2.8.*/plugins/`  
-Windows: `C:/Program Files/Cytoscape_v2.8.*/plugins`
-    
+in the Cytoscape plugin folder
+`Cytoscape_v2.8.*/plugins/`
+
 * remove `sbml-reader-2.8.3-jar-with-dependencies.jar` from the plugin folder.
 
 **cy2sabiork** is installed and available in Cytoscape under plugins after the next startup of Cytoscape.
 
-# Uninstall
+## Uninstall
 * remove `cy2sabiork-vx.xx.jar` from the plugin folder
 
 # Change Log
