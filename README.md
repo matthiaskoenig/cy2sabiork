@@ -20,23 +20,28 @@
 ## Install
 * install Cytoscape v2.8.3  
   http://www.cytoscape.org/download.html
-
 * download latest versions of cy2sbml and cy2sabiork from  
 https://github.com/matthiaskoenig/cy2sbml/releases/latest  
 https://github.com/matthiaskoenig/cy2sabiork/releases/latest
-
 * move the downloaded jar files  
 `cy2sbml-vx.xx.jar`  
 `cy2sabiork-vx.xx.jar`  
 in the Cytoscape plugin folder
 `Cytoscape_v2.8.*/plugins/`
-
 * remove `sbml-reader-2.8.3-jar-with-dependencies.jar` from the plugin folder.
 
 **cy2sabiork** is installed and available in Cytoscape under plugins after the next startup of Cytoscape.
 
 ## Uninstall
 * remove `cy2sabiork-vx.xx.jar` from the plugin folder
+
+## Build instructions
+Clone the repository and build with `ant`
+```
+git clone https://github.com/matthiaskoenig/cy2sabiork.git cy2sabiork
+cd cy2sabiork
+ant cy2sabiork
+```
 
 # Change Log
 **v0.2.0** [2015-10-27]
