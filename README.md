@@ -42,6 +42,11 @@ git clone https://github.com/matthiaskoenig/cy2sabiork.git cy2sabiork
 cd cy2sabiork
 ant cy2sabiork
 ```
+Development is done in `develop` branch, documentation in `gh-pages`
+```
+git checkout -b develop --track origin/develop
+git checkout -b gh-pages --track origin/gh-pages
+```
 
 # Change Log
 **v0.2.0** [2015-10-27]
