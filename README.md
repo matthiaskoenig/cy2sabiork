@@ -1,7 +1,14 @@
-# cy2sabiork: SabioRK integration in Cytoscape 2
+# cy2sabiork: SabioRK for Cytoscape 2
 <div align="right>
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=RYHNRJFBMWD5N" title="Donate to this project using Paypal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" /></a>
 </div>
+
+---
+
+**[DEPRECATED]** This repository is no longer maintained. 
+All functionality has been ported to Cytoscape 3 and is available in   [**cy3sabiork**](https://github.com/matthiaskoenig/cy3sabiork/) from https://github.com/matthiaskoenig/cy3sabiork/.
+
+---
 
 **cy2sabiork** is a [Cytoscape 2](http://www.cytoscape.org) plugin for the for accessing kinetic information from
 [SABIO-RK](http://sabio.villa-bosch.de/) via the RESTful web service.  
